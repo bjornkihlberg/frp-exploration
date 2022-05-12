@@ -1,6 +1,9 @@
 dist
 dist-*
 cabal-dev
+*.cabal
+stack.yaml.lock
+TODO.txt
 *.o
 *.hi
 *.hie
