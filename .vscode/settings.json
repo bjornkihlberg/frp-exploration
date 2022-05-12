@@ -1,0 +1,10 @@
+{
+  "files.exclude": {
+    "**/.stack-work": true,
+    "**/*.lock": true,
+    "**/*.cabal": true
+  },
+  "[haskell]": {
+    "editor.tabSize": 2
+  }
+}

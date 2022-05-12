@@ -1,0 +1,47 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "stack run",
+      "type": "shell",
+      "command": "stack run",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "stack build",
+      "type": "shell",
+      "command": "stack build",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "stack test --no-run-tests --pedantic",
+      "type": "shell",
+      "command": "stack test --no-run-tests --pedantic",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "stack test",
+      "type": "shell",
+      "command": "stack test",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "stack test --no-run-tests",
+      "type": "shell",
+      "command": "stack test --no-run-tests",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "stack repl",
+      "type": "shell",
+      "command": "stack repl",
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}
