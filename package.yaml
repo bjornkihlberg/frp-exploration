@@ -1,0 +1,51 @@
+name: game01
+version: 0.0.0.1
+github: "bjornkihlberg/game01"
+license: BSD3
+author: "Björn Kihlberg"
+maintainer: "bjorn.wilhelm.kihlberg@gmail.com"
+copyright: "2021 Björn Kihlberg"
+
+extra-source-files: []
+
+description: Please see the README on GitHub at <https://github.com/bjornkihlberg/game01#readme>
+
+dependencies:
+  - base >= 4.7 && < 5
+  - free
+  - transformers
+  - containers
+  - aeson
+  - bytestring
+  - dunai
+  - linear
+
+library:
+  source-dirs: src
+
+executables:
+  game01-exe:
+    main: Main.hs
+    source-dirs: app
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+    dependencies:
+      - game01
+      - GLFW-b
+      - OpenGL
+      - fsnotify
+
+tests:
+  game01-test:
+    main: Spec.hs
+    source-dirs: test
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+    dependencies:
+      - game01
+      - hspec
+      - QuickCheck
